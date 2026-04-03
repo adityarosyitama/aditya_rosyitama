@@ -1,0 +1,43 @@
+/* ============================================
+   Silsilah Page — CSS Module
+   Hanya berlaku untuk page.tsx (scoped)
+   ============================================ */
+
+/* Reset khusus untuk wrapper halaman ini */
+.pageWrapper {
+  /* Paksa tidak ada margin/padding dari parent */
+  all: initial;
+  display: block;
+}
+
+/* Container utama family chart */
+.chartContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* 100dvw/dvh = dynamic viewport, akurat di mobile (address bar aware) */
+  width: 50dvw;
+  height: 50dvh;
+
+  /* Fallback untuk browser lama yang belum support dvw/dvh */
+  min-width: 100vw;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+
+  /* Pastikan di atas elemen lain */
+  z-index: 0;
+}
+
+/* Pastikan SVG yang di-render family-chart mengisi penuh */
+.chartContainer svg {
+  display: block;
+  width: 50% !important;
+  height: 50% !important;
+}

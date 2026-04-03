@@ -3,7 +3,8 @@ import { FadeInWhenVisible } from './motion'; // Import dari motion.tsx (buat fi
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+    
+        <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
       {/* Background Gradient - Optimized untuk Next.js 15 */}
       <div className="absolute inset-0 bg-linear-to-br from-violet-900/20 via-purple-900/30 to-black" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),transparent_70%)]" />
