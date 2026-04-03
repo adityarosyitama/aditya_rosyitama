@@ -2,9 +2,9 @@ id,first_name,last_name,birthday,avatar,gender,spouses,children,parents
 GaluhP-001,Galuh,P,,,F,,,AdityaR-001|NikenP-001
 AdityaR-001,Aditya,R,,,M,NikenP-001,GaluhP-001,Iriantana-001|AnikS-001
 NikenP-001,Niken,P,,,F,AdityaR-001,GaluhP-001,Widayadi-001|DwiK-001
-Iriantana-001,Iriantana,,,,M,AnikS-001,AdityaR-001|Anin-001|MAfifN-001,Suhodo-001|Sarjiyem-001
-AnikS-001,Anik,S,,,F,Iriantana-001,AdityaR-001|Anin-001|MAfifN-001,Sutrisno-001|Sriyati-001
-Anin-001,Anin,R,,,F,,,Iriantana-001|AnikS-001
+Iriantana-001,Iriantana,,,,M,AnikS-001,AdityaR-001|RAninR-001|MAfifN-001,Suhodo-001|Sarjiyem-001
+AnikS-001,Anik,S,,,F,Iriantana-001,AdityaR-001|RAninR-001|MAfifN-001,Sutrisno-001|Sriyati-001
+RAninR-001,R Anindya,R,,,F,,,Iriantana-001|AnikS-001
 MAfifN-001,M Afif,N,,,M,Hani-001,,Iriantana-001|AnikS-001
 Hani-001,Hani,N,,,F,MAfifN-001,,
 Suhodo-001,Suhodo,H,,,M,Sarjiyem-001,Iriantana-001,
