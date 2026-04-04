@@ -113,16 +113,14 @@ function makeCardUpdateHandler(
 }
 
 function cardUpdaterFn(element: Element, d: CardUpdateContext) {
-  if (d.data.main) {
-    const card = element.querySelector(".card-inner");
-    if (!card) return;
-    card.setAttribute("class", "card-inner");
-    card.setAttribute(
-      "style",
-      "width: 200px; height: 70px; padding: 15px; border-radius: 5px; text-align: center;"
-    );
-    card.innerHTML = `${d.data.data["first name"]} ${d.data.data["last name"]}`;
-  }
+  const card = element.querySelector(".card-inner");
+  if (!card) return;
+  card.setAttribute("class", "card-inner");
+  card.setAttribute(
+    "style",
+    "width: 200px; height: 70px; padding: 15px; border-radius: 5px; text-align: center; color: black;"
+  );
+  card.innerHTML = `<span style="color: black; font-weight: ${d.data.main ? "700" : "500"};">${d.data.data["first name"]} ${d.data.data["last name"]}</span>`;
 }
 
 const cardUpdateHandler = makeCardUpdateHandler(cardUpdaterFn);
@@ -178,6 +176,27 @@ export default function FamilyTree() {
     },
     []
   );
+
+  // Inject global CSS override untuk paksa warna teks hitam di semua kartu
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.id = "family-chart-text-override";
+    style.textContent = `
+      #FamilyChart .card-inner,
+      #FamilyChart .card-inner *,
+      #FamilyChart .card span,
+      #FamilyChart text,
+      #FamilyChart .card-body,
+      #FamilyChart .card-body * {
+        color: black !important;
+        fill: black !important;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.getElementById("family-chart-text-override")?.remove();
+    };
+  }, []);
 
   useEffect(() => {
     if (!contRef.current) return;
