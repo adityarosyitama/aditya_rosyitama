@@ -1,0 +1,31 @@
+id,label,type,parentId,description,color
+1,Ekonomi Global,root,,Sistem ekonomi dunia yang saling terhubung dan interdependen,#6366f1
+2,Kekuatan Ekonomi,branch,1,Negara GDP terbesar penggerak permintaan & kebijakan moneter global,#f59e0b
+3,Komoditas Dunia,branch,1,Sumber daya alam yang menentukan harga dan neraca perdagangan,#10b981
+4,Teknologi & Inovasi,branch,1,Negara pemimpin digital yang mendefinisikan industri masa depan,#06b6d4
+5,Sumber Daya Manusia,branch,1,Kekuatan tenaga kerja intelektual dan modal manusia global,#ec4899
+6,Perdagangan Global,branch,1,Arus ekspor-impor dan perjanjian dagang antar kawasan,#8b5cf6
+7,Amerika Serikat,leaf,2,GDP $27T · dominan di keuangan tech & militer,#fcd34d
+8,China,leaf,2,GDP $18T · manufaktur terbesar & tech berkembang pesat,#fcd34d
+9,Uni Eropa,leaf,2,Blok $17T · regulasi ketat pasar konsumen besar,#fcd34d
+10,Jepang,leaf,2,GDP $4T · otomotif robotika & keuangan maju,#fcd34d
+11,India,leaf,2,GDP $3.7T · pertumbuhan tercepat populasi terbesar dunia,#fcd34d
+12,Minyak & Gas,leaf,3,Arab Saudi Rusia Iran — 40% pasokan minyak dunia,#6ee7b7
+13,Batu Bara,leaf,3,Indonesia Australia China — produsen terbesar,#6ee7b7
+14,Nikel & EV Metals,leaf,3,Indonesia dominasi nikel untuk baterai kendaraan listrik,#6ee7b7
+15,Pangan & Agrikultur,leaf,3,Brasil Argentina AS Ukraina — lumbung pangan dunia,#6ee7b7
+16,Emas & Logam Mulia,leaf,3,China Australia Rusia — produksi emas terbesar global,#6ee7b7
+17,Silicon Valley,leaf,4,Pusat AI startup & semikonduktor Amerika Serikat,#67e8f9
+18,China Tech,leaf,4,Alibaba Huawei ByteDance — dominasi teknologi Asia,#67e8f9
+19,Semikonduktor,leaf,4,Taiwan TSMC & Korea Samsung — chip penggerak industri digital,#67e8f9
+20,AI & Otomasi,leaf,4,AS Eropa China berlomba dominasi kecerdasan buatan,#67e8f9
+21,Fintech & Kripto,leaf,4,Singapura Swiss AS — pusat inovasi keuangan digital,#67e8f9
+22,Asia Tenggara,leaf,5,Manufaktur murah & terampil hub produksi global,#f9a8d4
+23,India IT Talent,leaf,5,5M+ engineer IT terbesar di dunia ekspor jasa digital,#f9a8d4
+24,Eropa & Riset,leaf,5,Pusat penelitian akademik paten sains & inovasi,#f9a8d4
+25,Afrika Emerging,leaf,5,Populasi muda 1.4M — potensi tenaga kerja masa depan,#f9a8d4
+26,Diaspora Global,leaf,5,Remitansi $800B/tahun transfer kekayaan lintas negara,#f9a8d4
+27,ASEAN Trade Hub,leaf,6,Vietnam Thailand Indonesia — hub manufaktur ekspor,#c4b5fd
+28,Belt & Road China,leaf,6,Jalur sutra modern — investasi infrastruktur 140 negara,#c4b5fd
+29,BRICS Alliance,leaf,6,Brasil Rusia India China Afrika — blok ekonomi alternatif,#c4b5fd
+30,WTO & Regulasi,leaf,6,Kerangka aturan perdagangan bebas multilateral,#c4b5fd
